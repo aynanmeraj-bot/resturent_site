@@ -1,0 +1,43 @@
+{% extends 'menu/base.html' %}
+{% block title %}Reservation{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Dynamic Form Wrapper -->
+            <div class="reservation-card shadow-lg border-0 overflow-hidden">
+                <div class="row g-0">
+                    
+                    <!-- Decorative Left Side Banner -->
+                    <div class="col-md-5 reservation-banner text-white p-5 d-flex flex-column justify-content-center text-center">
+                        <div class="display-3 mb-3 animate-bounce">📅</div>
+                        <h3 class="fw-bold mb-3">Reserve A Table</h3>
+                        <p class="small opacity-90 mb-0">Skip the wait times and unlock exclusive tables for your fine dining experience tonight.</p>
+                    </div>
+                    
+                    <!-- Right Side Interactive Input Area -->
+                    <div class="col-md-7 p-5 bg-white">
+                        <h2 class="fw-black mb-4 text-dark form-heading">Secure Your Spot</h2>
+                        
+                        <form method="post" class="colorful-form">
+                            {% csrf_token %}
+                            
+                            <!-- Django Form Dynamic Fields Container -->
+                            <div class="django-form-fields mb-4">
+                                {{ form.as_p }}
+                            </div>
+                            
+                            <!-- Premium Animated Action Button -->
+                            <button type="submit" class="btn btn-reserve w-100 py-3 rounded-pill fw-bold shadow-sm">
+                                Complete Reservation ✨
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

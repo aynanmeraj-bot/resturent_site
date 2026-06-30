@@ -1,0 +1,404 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #74ade7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Hero section (Home page) */
+.text-center h1 {
+    font-size: 3rem;
+    color: #343a40;
+}
+
+.text-center p.lead {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Hero Banner Component */
+.restaurant-hero {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.btn-hero {
+    background-color: #ffffff;
+    color: #ff4b2b;
+    font-weight: 700;
+    border-radius: 50rem;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.btn-hero:hover {
+    background-color: #f8f9fa;
+    color: #ff416c;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+/* Menu Section extra-----> */ 
+/* Colorful Header Banner */
+.menu-header {
+    background: linear-gradient(135deg, #8a2387, #e94057, #f27121);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+}
+
+/* Base Card Styling and Lift Animation */
+.colorful-menu-card {
+    border-radius: 1.5rem !important;
+    overflow: hidden;
+    background: #ffffff;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.colorful-menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+
+/* Zoom Container for Dish Images */
+.card-img-wrapper {
+    overflow: hidden;
+    height: 220px;
+    background-color: #f8f9fa;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.colorful-menu-card:hover .card-img-wrapper img {
+    transform: scale(1.08);
+}
+
+/* Neon Price Tag Badge */
+.price-tag {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: #ffffff;
+    padding: 0.5rem 1rem !important;
+    border-radius: 50rem !important;
+}
+
+/* Energetic Order Button States */
+.btn-order {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem;
+    transition: opacity 0.2s ease;
+}
+
+.btn-order:hover {
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Playful Empty State Frame */
+.empty-menu-box {
+    background-color: #fff3cd;
+    border: 2px dashed #ffc107;
+    padding: 3rem;
+}
+.empty-menu-box h3 {
+    color: #856404;
+}
+
+
+
+
+
+
+
+/* Reservation Form extra------> */
+/* Container Card & Layout Mechanics */
+.reservation-card {
+    border-radius: 2rem !important;
+    background: #ffffff;
+}
+
+/* Left Accent Theme Gradient */
+.reservation-banner {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.form-heading {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Django Native Loop Target Styles */
+.django-form-fields p {
+    margin-bottom: 1.25rem;
+}
+
+.django-form-fields label {
+    display: block;
+    font-weight: 700;
+    color: #495057;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+
+/* Automatic Injection For Django Rendered Inputs */
+.django-form-fields input,
+.django-form-fields select,
+.django-form-fields textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #f8f9fa;
+    background-clip: padding-box;
+    border: 2px solid #e9ecef;
+    border-radius: 0.75rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* High Contrast Neon Focus States */
+.django-form-fields input:focus,
+.django-form-fields select:focus,
+.django-form-fields textarea:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #38ef7d;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(56, 239, 125, 0.25);
+}
+
+/* Submit Action Button Core Mechanics */
+.btn-reserve {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-reserve:hover {
+    color: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1.5rem rgba(255, 65, 108, 0.4) !important;
+}
+
+/* Decorative Micro Animation */
+.animate-bounce {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+
+
+
+
+
+
+
+/*contact page extra----> */
+/* Container Box Structure */
+.contact-card {
+    border-radius: 2rem !important;
+    background: #ffffff;
+}
+
+/* Left Accent Gradient Panel */
+.contact-info-panel {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* Vivid Right Panel Typography Clip */
+.msg-heading {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+/* Icon Bubble Decorator Element */
+.icon-bubble {
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Input Fields Base Overhaul Styling */
+.custom-input {
+    background-color: #f8f9fa !important;
+    border: 2px solid #e9ecef !important;
+    border-radius: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* High Contrast Orange/Crimson Focus Cues */
+.custom-input:focus {
+    background-color: #ffffff !important;
+    border-color: #ff416c !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 65, 108, 0.25) !important;
+}
+
+/* Submit Action Button Core Mechanics */
+.btn-send {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: #ffffff;
+    border: none;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-send:hover {
+    color: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 0.5rem 1.5rem rgba(255, 65, 108, 0.4) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Feature Grid Cards */
+.feature-card {
+    border: none !important;
+    border-radius: 1.5rem !important;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+}
+
+.feature-card .card-text {
+    opacity: 0.9;
+}
+
+/* Specific Card Color Gradients */
+.card-ingredients {
+    background: linear-gradient(135deg, #ff9900, #ff5500);
+}
+
+.card-atmosphere {
+    background: linear-gradient(135deg, #8a2387, #e94057);
+}
+
+.card-service {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+/* Footer Info Panel */
+.info-section {
+    background: linear-gradient(135deg, #0f2027, #203a43);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.info-title {
+    color: #ffc107;
+}
+
+.info-label {
+    color: #0dcaf0;
+    font-weight: 700;
+}
+
+.btn-info-action {
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: 700;
+    border-radius: 50rem;
+    border: none;
+}
+
+.btn-info-action:hover {
+    background-color: #ffca2c;
+    color: #212529;
+}
+
+
+
+
+/* Menu cards */
+.card {
+    box-shadow: 0 4px 6px rgba(173, 17, 17, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Reservation form */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form button {
+    width: 100%;
+    background-color: #eb410e;
+}
+
+/* Footer */
+footer {
+    background-color: #0080ff;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+}

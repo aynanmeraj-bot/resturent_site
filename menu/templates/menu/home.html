@@ -1,0 +1,68 @@
+{% extends 'menu/base.html' %} 
+
+{% block title %}Home{% endblock %} 
+
+{% block content %}
+<!-- Vibrant Hero Section -->
+<div class="container my-5 text-center">
+    <div class="restaurant-hero shadow-lg">
+        <h1 class="display-3 fw-black mb-3">Welcome to My Restaurant</h1>
+        <p class="lead fs-3 fw-light mb-4">Delicious food, cozy atmosphere, and great service.</p>
+        <a href="/menu" class="btn btn-hero btn-lg px-5 py-3 shadow">View Menu</a>
+    </div>
+</div>
+
+<!-- Colorful Features Section -->
+<div class="container my-5">
+    <div class="row g-4 text-center">
+        <!-- Feature 1: Fresh Ingredients -->
+        <div class="col-md-4">
+            <div class="card h-100 feature-card card-ingredients shadow">
+                <div class="card-body p-4">
+                    <div class="feature-icon mb-3">🍳</div>
+                    <h3 class="h4 card-title fw-bold">Fresh Ingredients</h3>
+                    <p class="card-text">We source everything locally to ensure the highest quality meals.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 2: Cozy Atmosphere -->
+        <div class="col-md-4">
+            <div class="card h-100 feature-card card-atmosphere shadow">
+                <div class="card-body p-4">
+                    <div class="feature-icon mb-3">🍷</div>
+                    <h3 class="h4 card-title fw-bold">Cozy Atmosphere</h3>
+                    <p class="card-text">Enjoy your dinner in a warm, relaxing, and friendly environment.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Feature 3: Top Service -->
+        <div class="col-md-4">
+            <div class="card h-100 feature-card card-service shadow">
+                <div class="card-body p-4">
+                    <div class="feature-icon mb-3">⭐</div>
+                    <h3 class="h4 card-title fw-bold">Top Service</h3>
+                    <p class="card-text">Our hospitality team is dedicated to giving you an amazing experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- High-Contrast Info Section -->
+<div class="container my-5">
+    <div class="info-section shadow text-center">
+        <h2 class="display-5 fw-bold mb-4 info-title">Visit Us Today</h2>
+        <div class="row justify-content-center fs-5">
+            <div class="col-md-5 mb-3">
+                <p class="mb-1 info-label">📍 Address</p>
+                <p class="text-white">123 Foodie Street, Gourmet City</p>
+            </div>
+            <div class="col-md-5 mb-3">
+                <p class="mb-1 info-label">🕒 Hours</p>
+                <p class="text-white">Tue - Sun: 11:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <a href="tel:+1234567890" class="btn btn-info-action btn-lg px-4 mt-3 shadow-sm">Call to Book a Table</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'menu/base.html' %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<div class="container my-5">
+    <div class="contact-card shadow-lg border-0 overflow-hidden">
+        <div class="row g-0">
+            
+            <!-- Left Info Panel (Deep Midnight Gradient) -->
+            <div class="col-md-5 contact-info-panel text-white p-5 d-flex flex-column justify-content-between">
+                <div>
+                    <h2 class="display-5 fw-bold text-warning mb-3">Get In Touch</h2>
+                    <p class="opacity-90 mb-5">For reservations, private catering inquiries, or general questions, feel free to reach out anytime!</p>
+                    
+                    <!-- Quick Connection Links -->
+                    <div class="contact-methods">
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-bubble me-3">📞</div>
+                            <div>
+                                <small class="text-info d-block fw-bold">Call Us Direct</small>
+                                <a href="tel:+1234567890" class="text-white text-decoration-none fw-bold fs-5">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-bubble me-3">✉️</div>
+                            <div>
+                                <small class="text-info d-block fw-bold">Send Email</small>
+                                <a href="mailto:hello@myrestaurant.com" class="text-white text-decoration-none fw-bold fs-5">hello@myrestaurant.com</a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div class="icon-bubble me-3">📍</div>
+                            <div>
+                                <small class="text-info d-block fw-bold">Find Us At</small>
+                                <span class="fw-bold text-white">123 Foodie Street, Gourmet City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Friendly Notice Area -->
+                <div class="mt-4 pt-3 border-top border-secondary opacity-75">
+                    <small>⚡ We typically respond to email inquiries within 24 hours.</small>
+                </div>
+            </div>
+            
+            <!-- Right Form Panel (Bright Clean White Layout) -->
+            <div class="col-md-7 p-5 bg-white">
+                <h3 class="fw-black mb-4 msg-heading">Drop Us A Line</h3>
+                
+                <form action="" method="POST" class="custom-contact-form">
+                    <!-- Standard placeholder layout fields. If using dynamic Django forms later, wrap around {{ form.as_p }} -->
+                     {% csrf_token %}
+                     
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted">Your Full Name</label>
+                        <input type="text" name="name" class="form-control custom-input" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold text-muted">Email Address</label>
+                        <input type="email" name="email" class="form-control custom-input" placeholder="john@example.com" required>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-muted">Your Message</label>
+                        <textarea name="message" class="form-control custom-input" rows="4" placeholder="How can our kitchen team help you today?" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-send w-100 py-3 rounded-pill fw-bold shadow-sm">
+                        Send Message 🚀
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
