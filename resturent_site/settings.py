@@ -124,10 +124,17 @@ USE_TZ = True
 STATICFILES_DIRS = [
     BASE_DIR / 'menu' / 'static',
 ]
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STATIC_URL = '/static/' 
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+import os
+
+STATIC_URL = '/static/'
+
+# This is where Django will collect all static files for production
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
